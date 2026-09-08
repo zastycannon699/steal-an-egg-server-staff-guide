@@ -38,7 +38,7 @@ const staffNotes = [
   "If you're unsure which punishment to give, ask a Senior Mod or Head Mod before taking action.",
   'Always have evidence for punishments when possible. Do not punish someone based solely on assumptions.',
   'Staff Accountability: Staff members are expected to follow the same rules as everyone else and are held to a higher standard due to their position. If a staff member is found violating server rules, abusing their permissions, or acting inappropriately, they may receive a punishment, demotion, or removal from the staff team depending on the severity of the situation. Repeated or serious violations may result in further disciplinary action. All staff members are expected to set a good example and use their position responsibly.',
-  'Credits to Midnight for letting me use his original guide.',
+  
 ];
 
 const guideList = document.querySelector('#guideList');
