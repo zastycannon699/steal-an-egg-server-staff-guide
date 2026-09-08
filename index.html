@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Steal An Egg Server staff command center." />
+    <title>Steal An Egg Server — Staff Command</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#guide" aria-label="Steal An Egg Server staff command home">
+        <img src="assets/images/steal-an-egg-icon.png" alt="Steal An Egg Server icon" />
+        <span>STEAL AN EGG SERVER</span>
+      </a>
+      <div class="topbar-actions">
+        <span class="live-dot">STAFF COMMAND</span>
+        <button class="palette-button" id="paletteButton" type="button" aria-label="Change colour theme" title="Change colour theme">
+          <span aria-hidden="true">✦</span><span id="paletteName">Ember</span>
+        </button>
+      </div>
+    </header>
+
+    <div class="command-layout">
+      <aside class="sidebar" aria-label="Staff guide navigation">
+        <p class="eyebrow">STEAL AN EGG SERVER</p>
+        <h1>Staff<br />Command</h1>
+        <p class="sidebar-copy">A clear reference for the people keeping the fleet steady.</p>
+
+        <nav class="command-nav">
+          <button class="nav-button active" type="button" data-view="guide" aria-current="page">
+            <span>01</span> Staff Guide
+          </button>
+          <button class="nav-button" type="button" data-view="roles">
+            <span>02</span> Staff Roles
+          </button>
+          <button class="nav-button" type="button" data-view="notes">
+            <span>03</span> Staff Notes
+          </button>
+        </nav>
+
+        <div class="sidebar-footer">
+          <p>Need help with a decision?</p>
+          <a href="#notes" data-open-view="notes">Ask higher up →</a>
+        </div>
+      </aside>
+
+      <main class="content">
+        <section class="view active" id="guideView" data-view-panel="guide">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">01 / MODERATION</p>
+              <h2>The Staff Guide</h2>
+              <p>Choose a category to see the appropriate action.</p>
+            </div>
+            <div class="guide-count" id="guideCount">10 categories</div>
+          </div>
+
+          <section class="warning-panel" aria-labelledby="warningTitle">
+            <div class="warning-title">
+              <p class="eyebrow">ESCALATION PATH</p>
+              <h3 id="warningTitle">Warning Levels</h3>
+            </div>
+            <div class="warning-levels" id="warningLevels"></div>
+          </section>
+
+          <div class="guide-toolbar">
+            <label class="search-box" for="guideSearch">
+              <span aria-hidden="true">⌕</span>
+              <input id="guideSearch" type="search" placeholder="Search an offence or action…" autocomplete="off" />
+            </label>
+            <p id="searchStatus" aria-live="polite">Showing all categories</p>
+          </div>
+
+          <section class="guide-list" id="guideList" aria-label="Moderation guide categories"></section>
+        </section>
+
+        <section class="view" id="rolesView" data-view-panel="roles" hidden>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">02 / TEAM STRUCTURE</p>
+              <h2>Staff Roles</h2>
+              <p>Select a role to view its responsibilities.</p>
+            </div>
+            <div class="guide-count" id="roleCount">9 roles</div>
+          </div>
+          <section class="roles-grid" id="rolesGrid" aria-label="Staff role information"></section>
+        </section>
+
+        <section class="view" id="notesView" data-view-panel="notes" hidden>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">03 / OPERATING STANDARD</p>
+              <h2>Staff Notes</h2>
+              <p>Use judgement, keep evidence, and ask when you are unsure.</p>
+            </div>
+          </div>
+
+          <section class="notes-panel" id="notesList" aria-label="Staff notes"></section>
+
+          <section class="contact-panel">
+            <div>
+              <p class="eyebrow">CONTACT STAFF</p>
+              <h3>Need help with a decision?</h3>
+              <p>Ask higher up on Discord before acting when you need support.</p>
+            </div>
+          </section>
+        </section>
+
+        <footer>Made by <strong>@zastycannon699_fr</strong></footer>
+      </main>
+    </div>
+
+    <script src="assets/app.js"></script>
+  </body>
+</html>
